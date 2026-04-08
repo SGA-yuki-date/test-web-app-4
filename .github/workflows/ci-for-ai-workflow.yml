@@ -1,0 +1,17 @@
+# このワークフローは ai-workflow のセットアッププレースホルダーです。
+# 必ず失敗するように設定されています。
+# 各プロジェクトの CI ワークフローに置き換えてください。
+name: ci-for-ai-workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder CI (intentionally fails)
+        run: |
+          echo "このワークフローはプレースホルダーです。プロジェクトの CI ワークフローに置き換えてください。"
+          exit 1
