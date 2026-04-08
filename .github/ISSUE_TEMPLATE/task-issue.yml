@@ -1,0 +1,39 @@
+name: "🔧 Task Issue"
+description: "タスク実装用 Issue"
+labels: ["task", "ai-workflow:issue:status:ready"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: タスク概要
+      description: このタスクで実現すること
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 要件
+      description: 具体的な要件を箇条書きで記載
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: 完了判定の基準
+    validations:
+      required: true
+  - type: textarea
+    id: technical-context
+    attributes:
+      label: 技術コンテキスト
+      description: 関連するアーキテクチャ、既存コード、制約事項
+    validations:
+      required: false
+  - type: input
+    id: parent-story
+    attributes:
+      label: 親ストーリー Issue 番号
+      description: "例: #23"
+    validations:
+      required: false

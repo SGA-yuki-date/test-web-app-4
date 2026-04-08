@@ -1,0 +1,15 @@
+{
+  "baseBranch": "main",
+  "autoMerge": {
+    "enabled": true,
+    "mergeGate": [
+      {
+        "type": "ai-review"
+      },
+      {
+        "type": "workflow",
+        "workflowName": "ci-for-ai-workflow"
+      }
+    ]
+  }
+}
